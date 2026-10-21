@@ -1,0 +1,16 @@
+<section class="presenter" id="presenter" aria-label="Показ AI Atlas" hidden>
+  <header class="presenter-header">
+    <div class="presenter-brand">ai<span>atlas.</span> / 2026</div>
+    <nav class="presenter-chapters" id="presentation-chapters" aria-label="Разделы презентации"></nav>
+    <button type="button" class="presenter-exit" id="presentation-exit">В атлас ↗</button>
+  </header>
+  <main class="presenter-body" id="presentation-body"><article class="presenter-slide" id="presentation-slide"></article></main>
+  <footer class="presenter-footer">
+    <div class="presenter-progress" id="presentation-progress"></div>
+    <button type="button" id="presentation-prev">← Назад</button>
+    <div class="presenter-position"><span id="presentation-position" aria-live="polite"></span><select id="presentation-picker" aria-label="Экран презентации"></select></div>
+    <div class="presenter-actions"><button type="button" id="presentation-fullscreen">На весь экран</button><button type="button" id="presentation-next">Далее →</button></div>
+  </footer>
+</section>
+<dialog id="presentation-dialog" aria-labelledby="presentation-dialog-title"><div class="modal-body" id="presentation-dialog-body"></div></dialog>
+<script type="application/json" id="presentation-data">%%PRESENTATION_DATA%%</script>

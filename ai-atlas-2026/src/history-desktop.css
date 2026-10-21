@@ -1,0 +1,13 @@
+@media(min-width:900px){
+ .nav,.back{font-size:14px}.hero-copy>p{font-size:17px;color:#62596d}
+ .section-caption,.framing p,.era>p,.year-thesis,.milestone p{font-size:16px;color:#62556c}
+ .year-strip button span,.year-toolbar,.all-years,.source-links a,.milestone time{font-size:12px;color:#6d567e}
+ .year-strip button{padding:14px 4px}.year-strip button span{font-size:11px}
+ .era-anchors,.era-principle,.change span,.takeaway .eyebrow{font-size:12px;color:#6e567f}
+ .change p{font-size:16px;color:#5f4774}.takeaway p{font-size:18px;color:#563d6c}
+ .year-context,.year-context>p,details>p,.technical-grid p{font-size:15px;color:#62516f}
+ .technical-grid h4{font-size:18px;color:#573c6d}.technical-heading span:last-child,.technical-foot .source-links a{font-size:12px;color:#6d567e}
+ .map-note{font-size:12px;color:#c8bdd5}.map-flow small,.map-date{font-size:12px;color:#c8bdd5}
+ .source-method,.sources-intro{font-size:14px;color:#62596d}.year-number{font-size:65px;margin-bottom:24px;color:#8b72b1}
+ .year-main{min-height:0}.year-main h3{font-size:32px}.evidence-title{color:#705b83}
+}

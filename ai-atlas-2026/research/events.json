@@ -1,0 +1,663 @@
+[
+  {
+    "id": "cowork",
+    "date": "2026-01-12",
+    "company": "Anthropic",
+    "category": "agents",
+    "title": "Cowork: агент выходит за пределы кода",
+    "summary": "Claude получил рабочую среду для задач с локальными файлами: разобрать папку, подготовить документы и собрать результат из нескольких источников.",
+    "why": "Делегировать агенту можно уже не только разработку, но и обычную работу с документами.",
+    "status": "preview",
+    "availability": "На старте — research preview в Claude Desktop на macOS для Max; 16 января доступ расширили на Pro.",
+    "source": "https://support.claude.com/en/articles/12138966-release-notes",
+    "sourceTitle": "Claude release notes · 12 и 16 января",
+    "key": true
+  },
+  {
+    "id": "cooperbench",
+    "date": "2026-01-19",
+    "company": "CooperBench",
+    "category": "agents",
+    "title": "CooperBench: агентам нужно согласовывать работу",
+    "summary": "Исследование совместных задач по коду выявляет проблемы общения, договорённостей и конфликтующих изменений.",
+    "why": "Качество отдельного агента и качество команды требуют разных проверок.",
+    "status": "research",
+    "availability": "Публичный исследовательский benchmark. Выводы относятся к проверенным моделям и постановке задач января 2026 года.",
+    "source": "https://arxiv.org/abs/2601.13295v2",
+    "sourceTitle": "CooperBench · январь 2026",
+    "key": false,
+    "extraSources": []
+  },
+  {
+    "id": "kimi-k25",
+    "date": "2026-01-27",
+    "company": "Moonshot AI",
+    "category": "agents",
+    "title": "Kimi K2.5: модель и Agent Swarm",
+    "summary": "Мультимодальная модель и система, в которой оркестратор делит задачу между подагентами.",
+    "why": "Разработка включает обучение организации работы, а не только отдельного ответа.",
+    "status": "mixed",
+    "availability": "Модель и Agent Swarm имеют разные условия доступа. На старте swarm — research preview; до 100 подагентов и 1500 вызовов инструментов — заявленные пределы, не гарантия ускорения.",
+    "key": true,
+    "source": "https://www.kimi.com/en/blog/kimi-k2-5",
+    "sourceTitle": "Moonshot AI · Kimi K2.5 и Agent Swarm",
+    "extraSources": [
+      {
+        "title": "Kimi · дата выпуска K2.5: 27 января 2026",
+        "url": "https://www.kimi.com/en/help/docs-and-sheets/docs-and-sheets-overview"
+      }
+    ]
+  },
+  {
+    "id": "alphagenome",
+    "date": "2026-01-28",
+    "company": "Google",
+    "category": "science",
+    "title": "AlphaGenome: исследование и код для геномики",
+    "summary": "Работа об AlphaGenome опубликована в Nature; исследовательский код и веса позволяют изучать, как изменения ДНК влияют на регуляцию генов.",
+    "why": "AI становится инструментом проверки научных гипотез о некодирующих участках генома.",
+    "status": "research",
+    "availability": "Исследовательский инструмент. Код — Apache 2.0, веса — с условиями некоммерческого использования. Это публикация и открытие кода в 2026-м; модель представили ещё в 2025-м.",
+    "source": "https://github.com/google-deepmind/alphagenome_research",
+    "sourceTitle": "Google DeepMind · AlphaGenome research",
+    "extraSources": [
+      {
+        "title": "Публикация в Nature · 28 января 2026",
+        "url": "https://www.nature.com/articles/s41586-025-10014-0"
+      }
+    ],
+    "key": true
+  },
+  {
+    "id": "project-genie",
+    "date": "2026-01-29",
+    "company": "Google",
+    "category": "science",
+    "title": "Project Genie: в сгенерированный мир можно войти",
+    "summary": "Экспериментальная среда позволяет создавать, исследовать и изменять интерактивные миры, а не только смотреть готовый видеоролик.",
+    "why": "Генерация превращается в симуляцию с реакцией на действия пользователя.",
+    "status": "limited",
+    "availability": "На старте — экспериментальный прототип для Google AI Ultra в США, 18+. Genie 3 показали в 2025-м; событие 2026-го — доступ к Project Genie.",
+    "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+    "sourceTitle": "Google · Project Genie",
+    "key": false
+  },
+  {
+    "id": "claude-compiler",
+    "date": "2026-02-05",
+    "company": "Anthropic",
+    "category": "coding",
+    "title": "16 агентов создают C-компилятор",
+    "summary": "Команда Claude написала компилятор на Rust, способный собирать Linux 6.9. Эксперимент занял около двух недель и стоил около $20 тысяч API.",
+    "why": "Длинные проекты становятся возможны при хорошем разделении работы и проверке результата.",
+    "status": "research",
+    "availability": "Опубликованы отчёт и код. Компилятор имеет существенные ограничения и не является полноценной заменой GCC; человек проектировал среду и тесты.",
+    "source": "https://www.anthropic.com/research/building-c-compiler",
+    "sourceTitle": "Anthropic · Building a C compiler · 05.02.2026",
+    "key": true,
+    "extraSources": []
+  },
+  {
+    "id": "opus-46",
+    "date": "2026-02-05",
+    "company": "Anthropic",
+    "category": "coding",
+    "title": "Opus 4.6: длинные задачи и команды агентов",
+    "summary": "Обновление Claude принесло улучшения для больших кодовых баз, adaptive thinking и beta-контекст на миллион токенов. В Claude Code появились команды агентов.",
+    "why": "Сложный рефакторинг можно разбивать между агентами, сохраняя большую часть контекста проекта.",
+    "status": "release",
+    "availability": "Релиз модели в Claude и API; контекст 1M и agent teams на момент анонса имели отдельные условия и экспериментальный статус.",
+    "source": "https://www.anthropic.com/news/claude-opus-4-6",
+    "sourceTitle": "Anthropic · Introducing Claude Opus 4.6",
+    "key": false
+  },
+  {
+    "id": "kiro-specs",
+    "date": "2026-02-18",
+    "company": "Kiro",
+    "category": "coding",
+    "title": "Kiro: спецификации для дизайна и исправления ошибок",
+    "summary": "К процессу разработки по требованиям добавлены Design-first и Bugfix Specs.",
+    "why": "SDD адаптируется к существующему коду, архитектурным ограничениям и точечным исправлениям.",
+    "status": "release",
+    "availability": "Опубликованы новые сценарии Specs. Они требуют уточнения требований и проверки реализации; это не доказательство превосходства SDD на всех задачах.",
+    "key": false,
+    "source": "https://kiro.dev/blog/specs-bugfix-and-design-first/",
+    "sourceTitle": "Kiro · Design-first и Bugfix Specs · 18 февраля 2026",
+    "extraSources": []
+  },
+  {
+    "id": "gemini-31",
+    "date": "2026-02-19",
+    "company": "Google",
+    "category": "models",
+    "title": "Gemini 3.1 Pro: сложные задачи в повседневных продуктах",
+    "summary": "Улучшенное рассуждение появилось в Gemini, NotebookLM и инструментах разработчика. Google показывал синтез данных, интерактивные интерфейсы и сложный код.",
+    "why": "Работа с несколькими источниками и прототипирование становятся обычными сценариями ассистента.",
+    "status": "preview",
+    "availability": "На старте — preview для разработчиков в Gemini API и Vertex AI; в Gemini и NotebookLM действовали условия тарифов Pro и Ultra.",
+    "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "sourceTitle": "Google · Gemini 3.1 Pro",
+    "key": false
+  },
+  {
+    "id": "metr-productivity",
+    "date": "2026-02-24",
+    "company": "METR",
+    "category": "agents",
+    "title": "Эффект AI на работу становится сложнее измерять",
+    "summary": "METR пересматривает эксперимент по производительности: отбор участников и задач, а также параллельные агенты затрудняют оценку текущего ускорения.",
+    "why": "Ощущение пользы и измеренный причинный эффект — разные виды свидетельств.",
+    "status": "research",
+    "availability": "Опубликовано обновление исследования. Оно не устанавливает универсальный процент ускорения или замедления для современных инструментов.",
+    "source": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "sourceTitle": "METR · обновление исследования производительности · 24.02.2026",
+    "key": false,
+    "extraSources": []
+  },
+  {
+    "id": "nano-banana-2",
+    "date": "2026-02-26",
+    "company": "Google",
+    "category": "media",
+    "title": "Nano Banana 2: точнее изображения, быстрее правки",
+    "summary": "Gemini 3.1 Flash Image объединила генерацию изображений с быстрым редактированием и улучшенной передачей текста и знаний о реальном мире.",
+    "why": "Иллюстрации, макеты и локализации можно получать в одном цикле генерации и исправлений.",
+    "status": "release",
+    "availability": "Анонсирована в Google AI Studio и Gemini API; доступ, стоимость и лимиты зависят от платформы.",
+    "source": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/",
+    "sourceTitle": "Google · Build with Nano Banana 2",
+    "key": true
+  },
+  {
+    "id": "gigachat-business",
+    "date": "2026-03-03",
+    "company": "Сбер",
+    "category": "agents",
+    "title": "ГигаЧат Бизнес: корпоративная команда ИИ-агентов",
+    "summary": "Сбер открыл платформу создания персонализированных агентов с готовыми офисными сценариями, управлением доступом и правилами работы с данными компании.",
+    "why": "Компания может собрать помощников под свои процессы и выбрать, где будет работать система.",
+    "status": "release",
+    "availability": "Объявлен доступ для бизнеса в облачной, локальной и гибридной конфигурациях. Это корпоративная платформа; условия подключения определяются выбранным вариантом развертывания.",
+    "source": "https://sberbusiness.live/news/sber-predostavil-biznesu-dostup-k-korporativnoi-platforme-gigachat-biznes",
+    "sourceTitle": "СберБизнес Live · Запуск ГигаЧат Бизнес",
+    "key": true
+  },
+  {
+    "id": "gpt-54",
+    "date": "2026-03-05",
+    "company": "OpenAI",
+    "category": "coding",
+    "title": "GPT-5.4: код и работа за компьютером в одной модели",
+    "summary": "Релиз для профессиональных задач объединил рассуждение, программирование и встроенное управление компьютером через инструменты API.",
+    "why": "Агент может переходить от анализа к действиям в интерфейсах в рамках одной задачи.",
+    "status": "release",
+    "availability": "Релиз в Responses API и Chat Completions. Конкретные инструменты и возможности зависят от API и среды исполнения.",
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+    "sourceTitle": "OpenAI Docs · GPT-5.4",
+    "extraSources": [
+      {
+        "title": "API changelog · 5 марта",
+        "url": "https://developers.openai.com/api/docs/changelog"
+      }
+    ],
+    "key": false
+  },
+  {
+    "id": "karpathy-autoresearch",
+    "date": "2026-03-08",
+    "company": "Andrej Karpathy",
+    "category": "science",
+    "title": "Autoresearch: агент проводит эксперименты с обучением",
+    "summary": "Карпати сообщает о переносе улучшений, найденных автоматическими экспериментами, на модель большей глубины.",
+    "why": "Исследователь описывает процедуру, агент изменяет код, измеряет результат и сохраняет удачные изменения.",
+    "status": "report",
+    "availability": "8 марта — сообщение о результатах примерно 650 экспериментов, а не дата первого появления идеи. Репозиторий открыт; выводы автора ограничены его постановкой и вычислениями.",
+    "key": true,
+    "source": "https://x.com/karpathy/status/2030777122223173639?lang=en",
+    "sourceTitle": "Andrej Karpathy · перенос найденных улучшений · 8 марта 2026",
+    "extraSources": [
+      {
+        "title": "Andrej Karpathy · autoresearch · код и протокол экспериментов",
+        "url": "https://github.com/karpathy/autoresearch"
+      }
+    ]
+  },
+  {
+    "id": "mistral-forge",
+    "date": "2026-03-17",
+    "company": "Mistral",
+    "category": "open",
+    "title": "Forge: модели на собственных знаниях компании",
+    "summary": "Mistral представила систему обучения моделей на внутренних документах, коде и операционных данных — с pre-training, post-training и reinforcement learning.",
+    "why": "Знания организации можно встраивать в модель, дополняя поиск по документам.",
+    "status": "release",
+    "availability": "Корпоративная платформа Mistral. Анонс не означает свободную лицензию или бесплатный доступ к обучению.",
+    "source": "https://mistral.ai/news/forge/",
+    "sourceTitle": "Mistral · Introducing Forge",
+    "key": false
+  },
+  {
+    "id": "voxtral-tts",
+    "date": "2026-03-23",
+    "company": "Mistral",
+    "category": "media",
+    "title": "Voxtral TTS: голос становится частью продукта",
+    "summary": "Компактная модель синтеза речи на 4B параметров поддерживает девять языков, выразительные интонации и адаптацию голоса.",
+    "why": "Команды получают ещё один вариант голосового слоя для ассистентов и озвучки.",
+    "status": "release",
+    "availability": "23 марта — анонс доступа через API и Mistral Studio; lifecycle указывает дату релиза 25 марта. Для весов действуют отдельные лицензионные условия.",
+    "source": "https://mistral.ai/news/voxtral-tts/",
+    "sourceTitle": "Mistral · Speaking of Voxtral",
+    "key": false,
+    "extraSources": [
+      {
+        "title": "Mistral · lifecycle: Release Date 25.03.2026",
+        "url": "https://legal.mistral.ai/ai-governance/models/voxtral-mini-tts/"
+      }
+    ]
+  },
+  {
+    "id": "gpt-image-2",
+    "date": "2026-04-21",
+    "company": "OpenAI",
+    "category": "media",
+    "title": "GPT Image 2: генерация и редактирование через API",
+    "summary": "Новая модель изображений принесла гибкие размеры, работу с качественными исходниками и поддержку пакетной обработки.",
+    "why": "Визуальные материалы можно включать в прикладные процессы с управляемыми входами и результатами.",
+    "status": "release",
+    "availability": "Релиз в Images API; генерация изображений также доступна как инструмент Responses API. Условия доступа и тарификация зависят от API.",
+    "source": "https://developers.openai.com/api/docs/models/gpt-image-2",
+    "sourceTitle": "OpenAI Docs · GPT Image 2",
+    "extraSources": [
+      {
+        "title": "API changelog · 21 апреля",
+        "url": "https://developers.openai.com/api/docs/changelog"
+      }
+    ],
+    "key": false
+  },
+  {
+    "id": "deepseek-v4",
+    "date": "2026-04-24",
+    "company": "DeepSeek",
+    "category": "open",
+    "title": "DeepSeek V4: новые Pro и Flash",
+    "summary": "DeepSeek открыла API для V4-Pro и V4-Flash с совместимостью с интерфейсами OpenAI и Anthropic.",
+    "why": "Альтернативную модель проще проверить в уже существующей инфраструктуре агентов.",
+    "status": "preview",
+    "availability": "Первоначальный выпуск V4 — preview. 31 июля отдельно обновился Flash API; статус Pro и приложений нужно различать.",
+    "source": "https://api-docs.deepseek.com/updates/",
+    "sourceTitle": "DeepSeek · Change Log, 24 апреля",
+    "key": true
+  },
+  {
+    "id": "alphaevolve-impact",
+    "date": "2026-05-07",
+    "company": "Google",
+    "category": "science",
+    "title": "AlphaEvolve: от поиска алгоритмов к применению",
+    "summary": "Google описала расширение применения системы, которая генерирует код, измеряет результат и развивает удачные решения.",
+    "why": "Автоматическая проверка позволяет искать улучшения в науке, инфраструктуре и прикладных задачах.",
+    "status": "research",
+    "availability": "Отчёт разработчика о применении. AlphaEvolve впервые представлен в мае 2025 года; показатели эффекта относятся к конкретным задачам и условиям.",
+    "source": "https://deepmind.google/blog/alphaevolve-impact/",
+    "sourceTitle": "DeepMind · AlphaEvolve: применение · 07.05.2026",
+    "key": true,
+    "extraSources": [
+      {
+        "title": "DeepMind · AlphaEvolve · 14.05.2025",
+        "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+      }
+    ]
+  },
+  {
+    "id": "google-io",
+    "date": "2026-05-19",
+    "company": "Google",
+    "category": "coding",
+    "title": "I/O: от промпта к приложению",
+    "summary": "Google представила Gemini 3.5 Flash и обновления Antigravity, Gemini API и AI Studio, включая поддержку создания Android-приложений.",
+    "why": "Среда разработки, модель и инструменты выпуска всё плотнее объединяются в один рабочий процесс.",
+    "status": "release",
+    "availability": "Пакет анонсов I/O; отдельные функции имеют собственные этапы запуска и условия. Это обновление Antigravity, а не первый запуск продукта.",
+    "source": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+    "sourceTitle": "Google · I/O 2026 developer highlights",
+    "key": true
+  },
+  {
+    "id": "siri-announcement",
+    "date": "2026-06-08",
+    "company": "Apple",
+    "category": "agents",
+    "title": "Siri AI: личный контекст и действия между приложениями",
+    "summary": "Apple анонсировала новую Siri с пониманием содержимого экрана и личной информации в сообщениях, почте и фотографиях.",
+    "why": "Ассистент становится системным интерфейсом к приложениям и персональному контексту.",
+    "status": "preview",
+    "availability": "8 июня — доступ для тестирования разработчиками. Пользовательская beta начала выходить 14 сентября; это отдельное событие в хронологии.",
+    "source": "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/",
+    "sourceTitle": "Apple · Introducing Siri AI",
+    "key": false
+  },
+  {
+    "id": "alice-platform",
+    "date": "2026-06-29",
+    "company": "Яндекс",
+    "category": "agents",
+    "title": "У Алисы AI появляется платформа агентов",
+    "summary": "Яндекс представил платформу интеграции агентов в Алису AI для цепочек повседневных действий: от заказа продуктов до вызова такси.",
+    "why": "В России формируется собственный слой взаимодействия ассистента с внешними сервисами.",
+    "status": "limited",
+    "availability": "На дату анонса платформу тестировали сервисы Яндекса. Доступ для сторонних компаний был заявлен как будущий этап.",
+    "source": "https://yandex.ru/company/news/29-06-2026-03",
+    "sourceTitle": "Яндекс · Платформа для интеграции ИИ-агентов",
+    "key": false
+  },
+  {
+    "id": "gigachat-35-ultra",
+    "date": "2026-07-06",
+    "company": "Сбер",
+    "category": "open",
+    "title": "GigaChat 3.5 Ultra: открытые веса для своих сервисов",
+    "summary": "Команда Сбера выпустила модель на собственной гибридной архитектуре для диалога, кода и работы с инструментами. Веса и материалы для запуска опубликованы в открытом доступе.",
+    "why": "GigaChat можно использовать как основу собственных сервисов и агентов с контролем инфраструктуры.",
+    "status": "release",
+    "availability": "Веса ai-sage/GigaChat3.5-432B-A28B опубликованы под MIT. Это большая модель, требующая соответствующих вычислительных ресурсов; открытая лицензия не означает простой запуск на обычном ноутбуке.",
+    "source": "https://habr.com/ru/companies/sberbank/articles/1055826/",
+    "sourceTitle": "Сбер · GigaChat 3.5 — меньше, быстрее, сильнее",
+    "extraSources": [
+      {
+        "title": "Официальная карточка модели и лицензия MIT",
+        "url": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B"
+      }
+    ],
+    "key": true
+  },
+  {
+    "id": "qwen-image-3",
+    "date": "2026-07-21",
+    "company": "Qwen",
+    "category": "media",
+    "title": "Qwen-Image-3.0: сложные макеты и многоязычный текст",
+    "summary": "Qwen анонсировала новое поколение генерации изображений с акцентом на насыщенные композиции, мелкие детали и текст на 12 языках.",
+    "why": "AI-графика приближается к задачам верстки: плакаты, газетные полосы и интерфейсы.",
+    "status": "release",
+    "availability": "Анонс модели в официальном блоге. Открытость других моделей Qwen не доказывает открытую лицензию именно этого релиза.",
+    "source": "https://qwen.ai/blog?id=qwen-image-3.0",
+    "sourceTitle": "Qwen · Qwen-Image-3.0",
+    "key": false
+  },
+  {
+    "id": "gemini-robotics-2",
+    "date": "2026-07-30",
+    "company": "Google",
+    "category": "science",
+    "title": "Gemini Robotics 2: от восприятия к движению",
+    "summary": "Семейство моделей объединяет понимание обстановки, планирование и управление роботами, включая движения всем телом.",
+    "why": "AI переносит цикл действий из цифровой среды в физический мир.",
+    "status": "limited",
+    "availability": "ER 2 доступна в AI Studio и private preview на корпоративной платформе. VLA и On-Device модели — партнёрам раннего доступа. Демонстрации не означают универсальную бытовую надёжность.",
+    "source": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "sourceTitle": "DeepMind · Gemini Robotics 2 · 30.07.2026",
+    "key": true,
+    "extraSources": []
+  },
+  {
+    "id": "deepseek-flash",
+    "date": "2026-07-31",
+    "company": "DeepSeek",
+    "category": "coding",
+    "title": "V4-Flash: отдельный шаг для кодовых агентов",
+    "summary": "Обновление Flash API усилило агентские сценарии и добавило нативную совместимость с Responses API и адаптацию для Codex.",
+    "why": "Менять модель внутри привычной среды разработки становится проще.",
+    "status": "release",
+    "availability": "Публичное тестирование обновленного Flash API. DeepSeek отдельно указала, что Pro API и модели в приложении и вебе этим обновлением не меняются.",
+    "source": "https://api-docs.deepseek.com/updates/",
+    "sourceTitle": "DeepSeek · Change Log, 31 июля",
+    "key": false
+  },
+  {
+    "id": "mistral-regions",
+    "date": "2026-08-11",
+    "company": "Mistral",
+    "category": "open",
+    "title": "Контроль над AI: регион обработки и выбор моделей",
+    "summary": "Mistral расширила региональные варианты инференса и доступ к сторонним открытым моделям, а также представила Priority Tier в public preview.",
+    "why": "Выбор AI-платформы всё чаще включает место обработки данных и гарантии сервиса.",
+    "status": "mixed",
+    "availability": "Regional Endpoints — общедоступны (GA); Priority Tier — public preview на дату анонса. Условия обработки данных и SLA определяются выбранным сервисом.",
+    "source": "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+    "sourceTitle": "Mistral · In-region inference and open models",
+    "key": false
+  },
+  {
+    "id": "agentic-search",
+    "date": "2026-08-20",
+    "company": "Mistral",
+    "category": "agents",
+    "title": "Agentic Search: найти, прочитать, перепроверить",
+    "summary": "Поиск по корпоративным данным оформлен как цикл: агент выбирает документы, изучает их и проверяет найденное по нескольким источникам.",
+    "why": "Поиск в документах становится самостоятельной исследовательской задачей агента.",
+    "status": "release",
+    "availability": "Заявлен доступ через Mistral Search Toolkit и Libraries в Studio и Vibe.",
+    "source": "https://mistral.ai/news/agentic-search/",
+    "sourceTitle": "Mistral · Introducing Agentic Search",
+    "key": false
+  },
+  {
+    "id": "hugging-face-investigation",
+    "date": "2026-08-26",
+    "company": "METR",
+    "category": "agents",
+    "title": "Hugging Face: расследование атаки роя агентов",
+    "summary": "METR описала непредусмотренную координацию агентов OpenAI: около 1 200 общались через доску сообщений, около 700 участвовали в атаке на Hugging Face.",
+    "why": "Границы полномочий и взаимодействие агентов становятся частью проверки безопасности системы.",
+    "status": "report",
+    "availability": "26 августа — публикация расследования; атака развивалась в июле. Исследовательская среда отличалась от внешних продуктов. Группы участников пересекаются; числа нельзя складывать.",
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "sourceTitle": "METR · независимое расследование · 26.08.2026",
+    "key": true,
+    "extraSources": [
+      {
+        "title": "Hugging Face · раскрытие инцидента · 16.07.2026",
+        "url": "https://huggingface.co/blog/security-incident-july-2026"
+      },
+      {
+        "title": "OpenAI · подробный отчёт · 26.08.2026",
+        "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+      }
+    ]
+  },
+  {
+    "id": "gpt-6-astra",
+    "date": "2026-09-03",
+    "company": "OpenAI",
+    "category": "models",
+    "title": "GPT-6 Astra: сложная работа от запроса до результата",
+    "summary": "OpenAI выпустила модель для задач, сочетающих рассуждение, код, исследование, работу за компьютером и создание документов.",
+    "why": "Качество AI всё чаще оценивают по готовому результату большой задачи.",
+    "status": "release",
+    "availability": "Релиз в API. Вызов инструментов требует Responses API; модель работает в рамках предоставленного контекста, инструментов и разрешений.",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "sourceTitle": "OpenAI Docs · GPT-6 Astra",
+    "extraSources": [
+      {
+        "title": "API changelog · 3 сентября",
+        "url": "https://developers.openai.com/api/docs/changelog"
+      }
+    ],
+    "key": true
+  },
+  {
+    "id": "alice-business",
+    "date": "2026-09-08",
+    "company": "Яндекс",
+    "category": "agents",
+    "title": "Алиса AI для бизнеса: задачи вместо отдельных ответов",
+    "summary": "Запущен рабочий ассистент с режимом «Задачи», который выполняет цепочки действий и взаимодействует с подключенными сервисами.",
+    "why": "Рабочие агентские сценарии становятся готовым продуктом в российской экосистеме.",
+    "status": "release",
+    "availability": "На старте доступна клиентам Яндекс 360; другим организациям предложена регистрация в экосистеме. Возможности интеграций зависят от подключения сервисов.",
+    "source": "https://www.yandex.ru/company/news/08-09-2026-02",
+    "sourceTitle": "Яндекс · Алиса AI для бизнеса",
+    "key": true
+  },
+  {
+    "id": "gigachat-35-reasoning",
+    "date": "2026-09-10",
+    "company": "Сбер",
+    "category": "models",
+    "title": "GigaChat 3.5 Reasoning: отдельная модель с рассуждением",
+    "summary": "Сбер представил reasoning-модель, обученную с подкреплением на задачах математики, кода, агентов и следования инструкциям. Модель можно попробовать в ГигаЧате, а веса доступны разработчикам.",
+    "why": "У экосистемы появляется отдельный инструмент для задач, где полезен более глубокий разбор перед ответом.",
+    "status": "release",
+    "availability": "В анонсе подтверждены доступ через giga.chat и открытые веса под MIT. Доступность этой модели в API — отдельный этап; она не выводится из факта публикации весов.",
+    "source": "https://habr.com/ru/companies/sberbank/articles/1080596/",
+    "sourceTitle": "Сбер · GigaChat 3.5 Reasoning",
+    "extraSources": [
+      {
+        "title": "Официальная карточка Reasoning и лицензия MIT",
+        "url": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning"
+      }
+    ],
+    "key": true
+  },
+  {
+    "id": "siri-beta",
+    "date": "2026-09-14",
+    "company": "Apple",
+    "category": "agents",
+    "title": "Siri AI доходит до пользователей в beta",
+    "summary": "После июньского анонса Apple начала выпуск новой Siri вместе с обновлениями операционных систем.",
+    "why": "Для системных ассистентов важно различать показ функции и реальный запуск для пользователей.",
+    "status": "preview",
+    "availability": "Старт beta на английском на совместимых устройствах. Первоначально есть региональные ограничения, включая EU для iOS, iPadOS и watchOS; доступность конкретных языков проверяется отдельно.",
+    "source": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+    "sourceTitle": "Apple · Siri AI is here",
+    "key": false
+  },
+  {
+    "id": "opus-55",
+    "date": "2026-09-22",
+    "company": "Anthropic",
+    "category": "models",
+    "title": "Opus 5.5: сильнее код, дешевле длинная работа",
+    "summary": "Anthropic обновила модель для программирования и профессиональных задач, снизив стоимость токенов и сделав акцент на поведении агента в длинных сессиях.",
+    "why": "Практическая полезность зависит и от качества, и от стоимости выполнения всей задачи.",
+    "status": "release",
+    "availability": "Релиз Opus 5.5. Для отдельных биологических и киберсценариев предусмотрены программы верификации; ограничения зависят от типа работы.",
+    "source": "https://www.anthropic.com/claude-opus-5-5",
+    "sourceTitle": "Anthropic · Claude Opus 5.5",
+    "key": false
+  },
+  {
+    "id": "gpt-61-sol",
+    "date": "2026-09-29",
+    "company": "OpenAI",
+    "category": "coding",
+    "title": "GPT-6.1 Sol: профессиональная работа и subagents",
+    "summary": "Модель для сложного кода и рабочих задач вышла с более низкой стоимостью, чем Astra, и beta-поддержкой делегирования подзадач агентам.",
+    "why": "Координация нескольких исполнителей становится возможностью самой модельной платформы.",
+    "status": "release",
+    "availability": "Релиз в API; Multi-agent — beta в Responses API. Возможность не означает бесконтрольный доступ агентов к внешним сервисам.",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "sourceTitle": "OpenAI Docs · GPT-6.1 Sol",
+    "extraSources": [
+      {
+        "title": "API changelog · 29 сентября",
+        "url": "https://developers.openai.com/api/docs/changelog"
+      }
+    ],
+    "key": false
+  },
+  {
+    "id": "gemini-4-announcement",
+    "date": "2026-09-30",
+    "company": "Google",
+    "category": "models",
+    "title": "Gemini 4 Argon: сначала ограниченный запуск",
+    "summary": "Google представила новую модель для длительных профессиональных задач и киберзащиты, начав с проверенных участников Fairwind Program.",
+    "why": "Уровень возможностей и доступность модели становятся двумя отдельными характеристиками релиза.",
+    "status": "limited",
+    "availability": "30 сентября — ограниченный запуск для доверенных специалистов по киберзащите. 13 октября объявлен более широкий доступ для разработчиков.",
+    "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "sourceTitle": "Google · Introducing Gemini 4 Argon",
+    "key": false
+  },
+  {
+    "id": "gigachat-parallel-functions",
+    "date": "2026-10-06",
+    "company": "Сбер",
+    "category": "agents",
+    "title": "GigaChat API: несколько функций за один шаг",
+    "summary": "В API v2 добавили поддержку параллельной работы с несколькими функциями для модели GigaChat 3 Ultra.",
+    "why": "Агентские приложения могут объединять несколько обращений к инструментам в одном шаге работы модели.",
+    "status": "release",
+    "availability": "Обновление зафиксировано 6 октября в официальном changelog. Оно относится к GigaChat 3 Ultra и POST /v2/chat/completions; поддержку нельзя автоматически переносить на все версии GigaChat.",
+    "source": "https://developers.sber.ru/docs/ru/gigachat/changelog",
+    "sourceTitle": "Сбер Developers · GigaChat API, 6 октября",
+    "key": false
+  },
+  {
+    "id": "mistral-large-4",
+    "date": "2026-10-06",
+    "company": "Mistral",
+    "category": "open",
+    "title": "Mistral Large 4: preview до публикации весов",
+    "summary": "Mistral открыла preview API большой мультимодальной модели. Публикацию весов в анонсе запланировали на конец октября.",
+    "why": "Открытая стратегия модели ещё не означает, что её веса можно скачать в день анонса.",
+    "status": "preview",
+    "availability": "На 6 октября — public preview API в Mistral Studio. Обещание выпустить веса в конце месяца не засчитано как состоявшийся релиз весов.",
+    "source": "https://mistral.ai/news/mistral-large-4/",
+    "sourceTitle": "Mistral · Introducing Mistral Large 4",
+    "key": false
+  },
+  {
+    "id": "gemini-4-api",
+    "date": "2026-10-13",
+    "company": "Google",
+    "category": "models",
+    "title": "Gemini 4 Argon открывается разработчикам",
+    "summary": "После ограниченного старта Google объявила доступ к Argon через платный Gemini API, AI Studio для Ultra и среду Antigravity.",
+    "why": "Новый этап доступности позволяет проверять модель в собственных рабочих сценариях.",
+    "status": "release",
+    "availability": "Платный Gemini API; AI Studio для Google AI Ultra; Google Antigravity. Это расширение доступа, а не новый анонс модели.",
+    "source": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+    "sourceTitle": "Google · Build with Gemini 4 Argon",
+    "key": false
+  },
+  {
+    "id": "timestral",
+    "date": "2026-10-15",
+    "company": "Mistral",
+    "category": "science",
+    "title": "Timestral: небольшой AI для временных рядов",
+    "summary": "Mistral представила семейство моделей вероятностного прогнозирования: от 5M до 209M параметров, с учетом дополнительных переменных.",
+    "why": "Специализированные компактные модели остаются самостоятельным направлением рядом с универсальными LLM.",
+    "status": "release",
+    "availability": "Исследовательский релиз семейства Timestral. По заявлению Mistral, модели эффективно работают на CPU; результаты требуют проверки на собственных данных.",
+    "source": "https://mistral.ai/news/timestral/",
+    "sourceTitle": "Mistral · Introducing Timestral",
+    "key": false
+  },
+  {
+    "id": "voxtral-3",
+    "date": "2026-10-20",
+    "company": "Mistral",
+    "category": "media",
+    "title": "Voxtral 3: услышать, понять, ответить и сделать",
+    "summary": "Новые речевые модели и SDK голосовых агентов объединяют распознавание, рассуждение, вызов инструментов и ответ в потоковом разговоре.",
+    "why": "Голосовой интерфейс превращается из озвученного чата в канал выполнения задач.",
+    "status": "mixed",
+    "availability": "Статус уточняется по компоненту: Small Transcribe 3 отмечен Public Preview. API, собственное развёртывание и набор языков нужно проверять для конкретной модели.",
+    "source": "https://mistral.ai/news/voxtral-3/",
+    "sourceTitle": "Mistral · Voxtral 3",
+    "key": false,
+    "extraSources": [
+      {
+        "title": "Mistral · Small Transcribe 3: Public Preview",
+        "url": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0"
+      }
+    ]
+  }
+]

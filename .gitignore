@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+*.log
+.cache/
+.playwright-mcp/
+.playwright-cli/
+output/
+ai-atlas-2026/research/deep-research-2026-10-21/
+ai-atlas-2026/research/DEEP_RESEARCH_PROMPT.md

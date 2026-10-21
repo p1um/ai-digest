@@ -1,0 +1,35 @@
+name: Publish AI Atlas
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build portable atlas
+        run: python3 ai-atlas-2026/research/build_history.py
+      - name: Check presentation JavaScript
+        run: node --check ai-atlas-2026/src/presentation.js
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ai-atlas-2026/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
